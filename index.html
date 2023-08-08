@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Walut</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <script defer src="js/script.js"></script>
+   
+
+
+
+<body id="body">
+    <div class="backgroundContainer">
+        <div class="formContainer">
+            <h1 class="formContainer__title">Kalkulator Walut</h1>
+            <div class="form">
+                <input class="form__input" type="number" min="1" max="100000000000" id="amount"
+                    placeholder="Wpisz kwotę" >
+
+                <label class="form__label" for="from">Z:</label>
+                <select id="primary" class="form__select"></select>
+
+                <label class="form__label" for="to">Na:</label>
+                <select id="secondary" class="form__select"> </select>
+
+                <input id="btn-convert" class="form__button" type="button" value="Przelicz">
+            </div>
+            <div>
+                <p id="result" class="result" style="display:none;">
+                    <span id="txt-primary"></span>
+                    <span id="txt-secondary"></span>
+                </p>
+            </div>
+</body>
+
+</html>
