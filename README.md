@@ -18,7 +18,7 @@ My website boasts a dynamic currency converter feature that supports five major 
 ## DEMO
 https://arturzak-269.github.io/Currency-Converter/
 
-![homepage](https://github.com/ArturZak-269)
+![homepage](https://github.com/ArturZak-269/Currency-Converter/blob/master/images/Currency-Converter-demo.png?raw=true)
 
 ## Author
 Created by Artur Żak.
