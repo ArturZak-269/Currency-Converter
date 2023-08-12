@@ -8,7 +8,7 @@ Welcome to my first Currency Conveter deployed on GitHub during my Frontend Deve
 * [Author](#author)
 
 ## Description 
-My website boasts a dynamic currency converter feature that supports five major currencies: PLN, GBP, USD, TRY, and EUR. This interactive tool empowers users to swiftly convert between these currencies, offering convenience and efficiency for financial calculations. Website provides a seamless experience to quickly obtain accurate conversions among these currencies.
+My website boasts a dynamic currency converter feature that supports five major currencies: PLN, GBP, USD, TRY, and EUR. This interactive tool empowers users to swiftly convert between these currencies, offering convenience and efficiency for financial calculations. It provides a seamless experience to quickly obtain accurate conversions among these currencies.
 
 ## Technologies Used
 - HTML
