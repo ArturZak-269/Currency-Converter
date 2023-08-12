@@ -25,7 +25,10 @@ primaryCurrency.addEventListener("change", fetchCurrencies);
 
 function getOptions(data) {
   return Object.entries(data)
-    .map(([country, currency]) => `<option value="${country}">${country} | ${currency}</option>`)
+    .map(
+      ([country, currency]) =>
+        `<option value="${country}">${country} | ${currency}</option>`
+    )
     .join("");
 }
 
@@ -36,7 +39,10 @@ function fetchCurrencies() {
   if (exchangeRates[primary]) {
     displayCurrency(exchangeRates[primary], primary, secondary);
   } else {
-    fetch("https://v6.exchangerate-api.com/v6/084cf46afd18beaf45e76f4d/latest/" + primary)
+    fetch(
+      "https://v6.exchangerate-api.com/v6/084cf46afd18beaf45e76f4d/latest/" +
+        primary
+    )
       .then((response) => {
         if (response.ok) {
           return response.json();
@@ -64,8 +70,12 @@ function displayCurrency(data, primary, secondary) {
 
   const calculated = amount * data.conversion_rates[secondary];
   document.getElementById("result").style.display = "block";
-  document.getElementById("txt-primary").innerText = amount + " " + primary + " = ";
-  document.getElementById("txt-secondary").innerText = calculated.toFixed(2) + " " + secondary;
+  document.getElementById("txt-primary").innerText =
+    amount + " " + primary + " = ";
+  document.getElementById("txt-secondary").innerText =
+    calculated.toFixed(2) + " " + secondary;
 }
 
-document.getElementById("btn-convert").addEventListener("click", fetchCurrencies);
+document
+  .getElementById("btn-convert")
+  .addEventListener("click", fetchCurrencies);
